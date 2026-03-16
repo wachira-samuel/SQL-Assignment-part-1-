@@ -1166,6 +1166,7 @@ where total_spent = (
     from customer_spending
 )
 order by full_name;
+
 -- 100. Which products generated sales every year present in the dataset?
 with product_yearly_sales as (
     select p.product_id,
@@ -1186,11 +1187,4 @@ cross join total_years ty
 group by pys.product_id, pys.product_name, ty.total_years
 having count(distinct pys.sale_year) = ty.total_years
 order by pys.product_name;
-
-
-
-
-
-
-
 
