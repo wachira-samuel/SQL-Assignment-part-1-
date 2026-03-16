@@ -1,7 +1,7 @@
--- CREATE schema assignment
+ -- CREATE schema assignment
 CREATE SCHEMA assignment;
 
--- CREATE Customers table in the assignment schema
+ -- CREATE Customers table in the assignment schema
 CREATE TABLE assignment.customers (
     customer_id INT PRIMARY KEY,
     first_name VARCHAR(50),
